@@ -35,4 +35,9 @@ public class Datos {
     public  static ArrayList<Persona> obtener() {
         return Datos.personas;
     }
+
+    public static String getid() {
+        return databaseReference.push().getKey();
+
+    }
 }

@@ -22,6 +22,7 @@ public class AdaptadorPersona extends RecyclerView.Adapter<AdaptadorPersona.Pers
     @Override
     public PersonaViewholder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_persona,viewGroup, false);
+        return new PersonaViewholder(v);
     }
 
     @Override
