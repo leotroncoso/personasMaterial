@@ -8,4 +8,5 @@
     <string name="titulo">Agregar Personas</string>
     <string name="Agregar">Agregar</string>
     <string name="limpiar">Limpiar</string>
+    <string name="mensaje">Guardado</string>
 </resources>

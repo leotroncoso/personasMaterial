@@ -1,3 +1,5 @@
+package com.example.personasmaterial;
+
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -7,12 +9,9 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.personasmaterial.Persona;
-import com.example.personasmaterial.R;
-
 import java.util.ArrayList;
 
-public class AdaptadorPersona extends RecyclerView.Adapter<AdaptadorPersona.PersonaViewholder> {
+public  class AdaptadorPersona extends RecyclerView.Adapter<AdaptadorPersona.PersonaViewholder> {
     private ArrayList<Persona> personas;
 
     public AdaptadorPersona(ArrayList<Persona> personas){
@@ -30,7 +29,7 @@ public class AdaptadorPersona extends RecyclerView.Adapter<AdaptadorPersona.Pers
         Persona p = personas.get(i);
         personaViewholder.foto.setImageResource(p.getFoto());
         personaViewholder.nombre.setText(p.getNombre());
-        personaViewholder.nombre.setText(p.getApellido());
+        personaViewholder.apellido.setText(p.getApellido());
 
     }
 
@@ -41,8 +40,8 @@ public class AdaptadorPersona extends RecyclerView.Adapter<AdaptadorPersona.Pers
 
     public static class PersonaViewholder extends RecyclerView.ViewHolder{
         private ImageView foto;
-        private EditText nombre;
-        private EditText apellido;
+        private TextView nombre;
+        private TextView apellido;
         private View v;
 
         public PersonaViewholder(View itemView){
