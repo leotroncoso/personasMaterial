@@ -14,8 +14,6 @@ public class Datos {
 
     public static void agregar(Persona p) {
         databaseReference.child(db).child(p.getId()).setValue(p);
-
-
     }
 
     public static void editar(Persona p) {
